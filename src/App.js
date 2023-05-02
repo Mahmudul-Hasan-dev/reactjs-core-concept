@@ -12,32 +12,50 @@ const personstyle = {
   padding: '5px'
 
 }
+// function App() {
+//   return (
+//     <div className="App">
+//       <header className="App-header">
+//         {/* <img src={logo} className="App-logo" alt="logo" /> */}
+//         <p>show number:{number}</p>
+//         <div style={personstyle}>
+//           <h2>singer section</h2>
+//           <p>performer:{person1.name} {person1.profession}</p>
+//           <p>chef:{person2.name} {person2.profession} </p>
+//         </div>
+
+//       </header>
+//     </div>
+//   );
+// }
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>show number:{number}</p>
-        <div style={personstyle}>
-          <h2>singer section</h2>
-          <p>performer:{person1.name} {person1.profession}</p>
-          <p>chef:{person2.name} {person2.profession} </p>
-        </div>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Person></Person>
+      <Person></Person>
+      <Person></Person>
+      <p>Friend show</p>
+      <Friend></Friend>
     </div>
   );
+}
+function Person() {
+  return (
+    <div className='Person'>
+      <h1>welcome to my site</h1>
+      <h4>Professional developer</h4>
+    </div>
+  )
+}
+
+function Friend() {
+  return (
+    <div className='Person'>
+      <h1>Friend</h1>
+      <p>kono kajer na</p>
+    </div>
+  )
 }
 
 export default App;
